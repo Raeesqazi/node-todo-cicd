@@ -10,7 +10,7 @@ pipeline{
         }
         stage("Code Build & Test"){
             steps{
-                echo "Code Build Stage Done Finally done"
+                echo "Code Build Stage Done Finally done yes done"
                 sh "docker build -t node-app ."
                 
             }
