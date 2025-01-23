@@ -10,8 +10,9 @@ pipeline{
         }
         stage("Code Build & Test"){
             steps{
-                echo "Code Build Stage"
+                echo "Code Build Stage Done"
                 sh "docker build -t node-app ."
+                
             }
         }
         stage("Push To DockerHub"){
